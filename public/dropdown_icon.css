@@ -1,0 +1,182 @@
+html {
+    box-sizing: border-box;
+    font-size: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    outline: none;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #1F8A70;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+  }
+  
+  .content-inner {
+    width: 560px;
+    height: 430px;
+    position: relative;
+    left: -280px;
+    top: -215px;
+  }
+  
+  .icon {
+    margin: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    margin: 45.4545454545px 25px;
+    transition: 0.3s;
+  }
+  .dropdown:before, .dropdown:after {
+    transition: 0.3s;
+    content: ' ';
+    position: absolute;
+    width: 50px;
+    height: 14.2857142857px;
+    background: #fff;
+    border-radius: 50px;
+  }
+  .dropdown:before {
+    left: -12.9157647678px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .dropdown:after {
+    left: 12.9157647678px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  #dropdown-1.close:before, #dropdown-1.close:after {
+    left: -25px;
+    width: 100px;
+  }
+  #dropdown-1.close:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #dropdown-1.close:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  #dropdown-2.close:before, #dropdown-2.close:after {
+    left: -25px;
+    width: 100px;
+  }
+  
+  #dropdown-3.close:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #dropdown-3.close:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  #dropdown-4.close:before {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #dropdown-4.close:after {
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .menu {
+    position: relative;
+    background: #fff;
+    width: 75px;
+    height: 14.2857142857px;
+    margin-top: 42.8571428571px;
+    margin-left: 12.5px;
+    border-radius: 75px;
+    transition: 0.3s;
+  }
+  .menu:before, .menu:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 14.2857142857px;
+    background: #fff;
+    border-radius: 75px;
+    transition: 0.3s;
+  }
+  .menu:before {
+    top: -28.5714285714px;
+  }
+  .menu:after {
+    top: 28.5714285714px;
+  }
+  
+  #menu-1.close {
+    background: transparent;
+  }
+  #menu-1.close:before, #menu-1.close:after {
+    top: 0;
+  }
+  #menu-1.close:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #menu-1.close:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  #menu-2.close {
+    background: transparent;
+  }
+  #menu-2.close:before, #menu-2.close:after {
+    top: 0;
+  }
+  #menu-2.close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #menu-2.close:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  #menu-3.close:before, #menu-3.close:after {
+    top: 0;
+  }
+  
+  #menu-4.close {
+    border-radius: 50%;
+    -webkit-transform: rotate(90deg) scaleX(0.2);
+            transform: rotate(90deg) scaleX(0.2);
+  }
+  #menu-4.close:before {
+    border-radius: 50%;
+  }
+  #menu-4.close:after {
+    border-radius: 50%;
+  }
+  
+  #icon-4, #icon-8, #icon-12 {
+    border-color: white;
+  }
+  

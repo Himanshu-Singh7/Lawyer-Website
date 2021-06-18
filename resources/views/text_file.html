@@ -1,0 +1,20 @@
+@foreach($feedback as $feedback_data)
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="mb-4">{{$feedback_data->message}}</p>
+					@foreach($user_feedback as $user_feed)
+					@if( $user_feed->id == $feedback_data->user_id)
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style='background-image: url("{{asset("/public/lawer_register/$user_feed->image")}}")'></div>
+                    	<div class="pl-3">
+		                    <p class="name">{{$user_feed->first_name}}</p>
+		                    <span class="position">{{$feedback_data->lawer_assigned_name}}</span>
+		                </div>
+					</div>
+					@endif
+					@endforeach
+                  </div>
+                </div>
+              </div>
+			  @endforeach
